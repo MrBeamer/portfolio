@@ -1,9 +1,24 @@
-import "./App.css";
+import "./App.scss";
+import {
+  Header,
+  Intro,
+  Contact,
+  Testimonials,
+  Portfolio,
+  Work,
+} from "./components";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Header />
+      <main className="sections">
+        <Intro />
+        <Portfolio />
+        <Work />
+        <Testimonials />
+        <Contact />
+      </main>
     </div>
   );
 }
