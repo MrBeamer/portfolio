@@ -1,3 +1,93 @@
 .intro {
-  background-color: orange;
+  display: flex;
+  background-color: #fff;
+
+  &__left {
+    flex: 0.5;
+    overflow: hidden;
+  }
+
+  &__right {
+    flex: 0.5;
+    // background-color: blue;
+    position: relative;
+  }
+
+  &__img-container {
+    // width: 100%;
+    // height: 100%;
+    width: 700px;
+    height: 750px;
+    background-color: crimson;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__headline-intro {
+    font-size: 35px;
+  }
+
+  &__headline-name {
+    font-size: 60px;
+    margin: 10px 0;
+  }
+
+  &__headline-occupation {
+    font-size: 30px;
+  }
+
+  &__span {
+    font-size: 30px;
+    color: crimson;
+  }
+
+  &__icon-link {
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+  }
+
+  &__icon {
+    width: 30px;
+    animation: arrowBlink 2s infinite;
+  }
+}
+
+.ityped-cursor {
+  color: crimson;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
