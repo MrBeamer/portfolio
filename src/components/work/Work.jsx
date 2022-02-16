@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./work.scss";
 import data from "../../data.json";
 
@@ -7,7 +7,6 @@ export default function Work() {
 
   function handleSlideClick(event) {
     const id = event.currentTarget.id;
-
     id === "left"
       ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
       : setCurrentSlide(currentSlide < 2 ? currentSlide + 1 : 0);
