@@ -23,16 +23,16 @@ export default function Contact() {
     });
   }
   console.log(contact);
-  // function handleChangeForm(event) {
-  //   const value = event.currentTarget.value;
-  //   const input = event.currentTarget.name;
-  //   console.log(input);
-  //   console.log(value);
+  function handleChangeForm(event) {
+    const value = event.currentTarget.value;
+    const input = event.currentTarget.name;
+    console.log(input);
+    console.log(value);
 
-  //   setContact((prevContact) => {
-  //     return { ...prevContact, [input]: value };
-  //   });
-  // }
+    setContact((prevContact) => {
+      return { ...prevContact, [input]: value };
+    });
+  }
 
   return (
     <div className="contact" id="contact">
@@ -46,23 +46,23 @@ export default function Contact() {
           method="post"
           // data-netlify="true"
           onSubmit={handleSubmit}
-          action="https://formsubmit.co/beamermichael@gmail.com"
+          // action="https://formsubmit.co/beamermichael@gmail.com"
         >
           <input
             className="contact__input"
             type="email"
             placeholder="Email"
             required
-            // value={contact.email}
-            // onChange={handleChangeForm}
+            value={contact.email}
+            onChange={handleChangeForm}
             name="email"
           ></input>
           <textarea
             className="contact__textarea"
             placeholder="Message"
             required
-            // value={contact.message}
-            // onChange={handleChangeForm}
+            value={contact.message}
+            onChange={handleChangeForm}
             name="message"
           ></textarea>
           <button type="submit" className="contact__btn">
