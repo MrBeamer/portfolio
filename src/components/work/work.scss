@@ -11,6 +11,7 @@
   display: flex;
   position: absolute;
   left: 0;
+  transition: all 1s ease;
 
   &__container {
     width: 100vw;
@@ -67,6 +68,8 @@
 
   &__description {
     font-size: 13px;
+    text-align: justify;
+    word-break: break-all;
   }
 
   &__item-right {
@@ -80,7 +83,7 @@
   &__img-right {
     width: 400px;
     border-radius: 20px;
-    // transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
 
   &__arrow {

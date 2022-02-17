@@ -15,29 +15,6 @@ export default function Portfolio() {
   //   { id: "other", title: "Other" },
   // ];
 
-  const list = [
-    {
-      id: "featured",
-      title: "Featured",
-    },
-    {
-      id: "web",
-      title: "Web App",
-    },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
-  ];
-
   useEffect(() => {
     switch (selected) {
       case "featured":
@@ -70,7 +47,7 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <h2 className="portfolio__headline">Portfolio</h2>
       <ul className="portfolio__tab-list">
-        {list.map((item) => {
+        {data.portfolioList.map((item) => {
           return (
             <PortfolioList
               key={item.id}

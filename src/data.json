@@ -1,4 +1,27 @@
 {
+  "portfolioList": [
+    {
+      "id": "featured",
+      "title": "Featured"
+    },
+    {
+      "id": "web",
+      "title": "Web App"
+    },
+    {
+      "id": "mobile",
+      "title": "Mobile App"
+    },
+    {
+      "id": "design",
+      "title": "Design"
+    },
+    {
+      "id": "content",
+      "title": "Content"
+    }
+  ],
+
   "featuredPortfolio": [
     {
       "id": 1,
@@ -168,23 +191,48 @@
     {
       "id": "1",
       "icon": "./assets/mobile.png",
-      "title": "Web Design",
-      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+      "title": "Web Development",
+      "desc": "A Bootcamp tought me a lot about HTML, SCSS and Ruby on Rails. Currently I am focusing on JavaScript & React and growing as a developer through new projects.",
       "img": "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
     },
     {
       "id": "2",
       "icon": "./assets/globe.png",
-      "title": "Mobile Application",
-      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "img": "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg"
+      "title": "Brand Management",
+      "desc": " studied brand management and made different working experiences. During that I learned about design essentials and the importance of a great user- experience/journey.",
+      "img": "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg"
     },
     {
       "id": "3",
       "icon": "./assets/writing.png",
-      "title": "Branding",
-      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "img": "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg"
+      "title": "Agile Development",
+      "desc": "While attending Le Wagon I experienced agile development. Part of the experience was pair programming, test-driven development, stand-ups and sprints.",
+      "img": "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg"
+    }
+  ],
+
+  "testimonialList": [
+    {
+      "id": "1",
+      "avatar": "assets/gamer.png",
+      "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      "name": "Tom Durden",
+      "job": "Senior Developer"
+    },
+    {
+      "id": "2",
+      "avatar": "assets/gamer.png",
+      "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      "name": "Kimberly Ungelenk",
+      "job": "CEO of Kiddi",
+      "highlight": true
+    },
+    {
+      "id": "3",
+      "avatar": "assets/gamer.png",
+      "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      "name": "Martin Harold",
+      "job": "CEO of ALBI"
     }
   ]
 }

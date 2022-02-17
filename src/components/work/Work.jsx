@@ -9,7 +9,9 @@ export default function Work() {
     const id = event.currentTarget.id;
     id === "left"
       ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
-      : setCurrentSlide(currentSlide < 2 ? currentSlide + 1 : 0);
+      : setCurrentSlide(
+          currentSlide < data.works.length - 1 ? currentSlide + 1 : 0
+        );
   }
 
   return (
