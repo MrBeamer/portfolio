@@ -4,6 +4,10 @@ import "./contact.scss";
 
 export default function Contact() {
   const [message, setMessage] = useState(false);
+  const [contact, setContact] = useState({
+    email: "",
+    message: "",
+  });
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -12,6 +16,22 @@ export default function Contact() {
     setInterval(function () {
       setMessage(false);
     }, 5000);
+
+    setContact({
+      email: "",
+      message: "",
+    });
+  }
+
+  function handleChangeForm(event) {
+    const value = event.currentTarget.value;
+    const input = event.currentTarget.name;
+    console.log(input);
+    console.log(value);
+
+    setContact((prevContact) => {
+      return { ...prevContact, [input]: value };
+    });
   }
 
   return (
@@ -23,28 +43,36 @@ export default function Contact() {
         <h2 className="contact__title">Contact</h2>
         <form
           className="contact__form"
-          onSubmit={handleSubmit}
           method="post"
           data-netlify="true"
+          onSubmit={handleSubmit}
         >
           <input
             className="contact__input"
             type="text"
             placeholder="Email"
             required
+            value={contact.email}
+            onChange={handleChangeForm}
+            name="email"
           ></input>
           <textarea
             className="contact__textarea"
             placeholder="Message"
             required
+            value={contact.message}
+            onChange={handleChangeForm}
+            name="message"
           ></textarea>
-          <button className="contact__btn">Send</button>
+          <button type="submit" className="contact__btn">
+            Send
+          </button>
+          {message && (
+            <span className="contact__message">
+              Thanks, I will reply as soon as possible.
+            </span>
+          )}
         </form>
-        {message && (
-          <p className="contact__message">
-            Thanks, I will reply as soon as possible :)
-          </p>
-        )}
       </div>
     </div>
   );
