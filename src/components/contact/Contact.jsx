@@ -22,17 +22,17 @@ export default function Contact() {
       message: "",
     });
   }
+  console.log(contact);
+  // function handleChangeForm(event) {
+  //   const value = event.currentTarget.value;
+  //   const input = event.currentTarget.name;
+  //   console.log(input);
+  //   console.log(value);
 
-  function handleChangeForm(event) {
-    const value = event.currentTarget.value;
-    const input = event.currentTarget.name;
-    console.log(input);
-    console.log(value);
-
-    setContact((prevContact) => {
-      return { ...prevContact, [input]: value };
-    });
-  }
+  //   setContact((prevContact) => {
+  //     return { ...prevContact, [input]: value };
+  //   });
+  // }
 
   return (
     <div className="contact" id="contact">
@@ -45,7 +45,7 @@ export default function Contact() {
           className="contact__form"
           method="post"
           data-netlify="true"
-          // onSubmit={handleSubmit}
+          onSubmit={handleSubmit}
         >
           <input
             className="contact__input"
