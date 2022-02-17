@@ -45,23 +45,23 @@ export default function Contact() {
           className="contact__form"
           method="post"
           data-netlify="true"
-          onSubmit={handleSubmit}
+          // onSubmit={handleSubmit}
         >
           <input
             className="contact__input"
-            type="text"
+            type="email"
             placeholder="Email"
             required
-            value={contact.email}
-            onChange={handleChangeForm}
+            // value={contact.email}
+            // onChange={handleChangeForm}
             name="email"
           ></input>
           <textarea
             className="contact__textarea"
             placeholder="Message"
             required
-            value={contact.message}
-            onChange={handleChangeForm}
+            // value={contact.message}
+            // onChange={handleChangeForm}
             name="message"
           ></textarea>
           <button type="submit" className="contact__btn">
