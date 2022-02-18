@@ -44,15 +44,9 @@ export default function Contact() {
         <form
           className="contact__form"
           method="post"
-          // data-netlify="true"
+          data-netlify="true"
           onSubmit={handleSubmit}
-          action="https://formsubmit.co/beamermichael@gmail.com"
         >
-          <input
-            type="hidden"
-            name="_next"
-            value="https://www.michaelbeamer.me/#contact"
-          />
           <input
             className="contact__input"
             type="email"
