@@ -10,7 +10,7 @@ export default function Contact() {
   });
 
   function handleSubmit(event) {
-    event.preventDefault();
+    // event.preventDefault();
     setMessage(true);
 
     setInterval(function () {
@@ -46,7 +46,7 @@ export default function Contact() {
           method="post"
           // data-netlify="true"
           onSubmit={handleSubmit}
-          // action="https://formsubmit.co/beamermichael@gmail.com"
+          action="https://formsubmit.co/beamermichael@gmail.com"
         >
           <input
             className="contact__input"
