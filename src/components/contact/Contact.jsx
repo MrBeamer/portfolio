@@ -49,6 +49,11 @@ export default function Contact() {
           action="https://formsubmit.co/beamermichael@gmail.com"
         >
           <input
+            type="hidden"
+            name="_next"
+            value="https://www.michaelbeamer.me/#contact"
+          />
+          <input
             className="contact__input"
             type="email"
             placeholder="Email"
@@ -56,7 +61,7 @@ export default function Contact() {
             value={contact.email}
             onChange={handleChangeForm}
             name="email"
-          ></input>
+          />
           <textarea
             className="contact__textarea"
             placeholder="Message"
