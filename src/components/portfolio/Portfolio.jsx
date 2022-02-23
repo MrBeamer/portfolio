@@ -4,33 +4,19 @@ import "./portfolio.scss";
 import data from "../../data.json";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("website");
   const [portfolio, setPortfolio] = useState([]);
-
-  console.log(portfolio);
-
-  // const list = [
-  //   { id: "websites", title: "Websites" },
-  //   { id: "games", title: "Games" },
-  //   { id: "other", title: "Other" },
-  // ];
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setPortfolio(data.featuredPortfolio);
+      case "website":
+        setPortfolio(data.websitePortfolio);
         break;
-      case "web":
+      case "webapp":
         setPortfolio(data.webPortfolio);
         break;
-      case "mobile":
-        setPortfolio(data.mobilePortfolio);
-        break;
-      case "design":
-        setPortfolio(data.designPortfolio);
-        break;
-      case "content":
-        setPortfolio(data.contentPortfolio);
+      case "game":
+        setPortfolio(data.gamePortfolio);
         break;
       default:
         console.log("error");
@@ -67,7 +53,17 @@ export default function Portfolio() {
                 src={portfolio.img}
                 alt={portfolio.title}
               />
-              <h3 className="portfolio__title">{portfolio.title}</h3>
+              <div className="portfolio__test">
+                <h3 className="portfolio__title">{portfolio.title}</h3>
+                <div>
+                  <a href={portfolio.web} target="_blank" rel="noreferrer">
+                    <i className="fa-globe fas"></i>
+                  </a>
+                  <a href={portfolio.git} target="_blank" rel="noreferrer">
+                    <i className="fa-github fab"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           );
         })}

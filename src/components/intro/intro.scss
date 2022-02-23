@@ -1,6 +1,13 @@
+@import "../../index.scss";
+
 .intro {
   display: flex;
   background-color: #fff;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__left {
     flex: 0.5;
@@ -27,6 +34,10 @@
 
   &__img {
     height: 100%;
+
+    @include mobile {
+      height: 50%;
+    }
   }
 
   &__wrapper {
@@ -36,24 +47,45 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include mobile {
+      padding: 0;
+      align-items: center;
+    }
   }
 
   &__headline-intro {
     font-size: 35px;
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
 
   &__headline-name {
     font-size: 60px;
     margin: 10px 0;
+
+    @include mobile {
+      font-size: 40px;
+    }
   }
 
   &__headline-occupation {
     font-size: 30px;
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   &__span {
     font-size: 30px;
     color: crimson;
+
+    @include mobile {
+      font-size: 25px;
+    }
   }
 
   &__icon-link {

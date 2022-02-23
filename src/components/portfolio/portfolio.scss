@@ -9,6 +9,10 @@
 
   &__headline {
     font-size: 50px;
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
 
   &__tab-list {
@@ -16,18 +20,9 @@
     padding: 0;
     list-style: none;
     display: flex;
-  }
 
-  &__tab {
-    font-size: 14px;
-    margin-right: 50px;
-    padding: 7px;
-    border-radius: 10px;
-    cursor: pointer;
-
-    &.active {
-      background-color: $mainColor;
-      color: #fff;
+    @include mobile {
+      flex-wrap: wrap;
     }
   }
 
@@ -37,6 +32,10 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__item {
@@ -53,6 +52,11 @@
     overflow: hidden;
     cursor: pointer;
     transition: all 0.5s ease;
+
+    @include mobile {
+      width: 280px;
+      height: auto;
+    }
 
     &:hover {
       background-color: $mainColor;
@@ -72,7 +76,28 @@
   }
 
   &__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  &__test {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     font-size: 20px;
+    color: #fff;
+    align-items: center;
   }
+}
+
+.fa-globe,
+.fa-github {
+  color: #fff;
+
+  &:hover {
+    color: crimson;
+  }
+}
+
+.fa-globe {
+  margin-right: 25px;
 }

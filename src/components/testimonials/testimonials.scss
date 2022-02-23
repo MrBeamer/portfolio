@@ -1,3 +1,5 @@
+@import "../../index.scss";
+
 .testimonials {
   background-color: #fff;
   display: flex;
@@ -7,6 +9,10 @@
 
   &__title {
     font-size: 50px;
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
 
   &__container {
@@ -16,6 +22,13 @@
     justify-content: center;
     align-items: center;
     column-gap: 30px;
+    margin: 20px 0;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
   }
 }
 
@@ -30,9 +43,18 @@
   padding: 20px;
   transition: all 0.5s ease-in-out;
 
+  @include mobile {
+    height: 180px;
+  }
+
   &.highlight {
     width: 300px;
     height: 75%;
+
+    @include mobile {
+      height: 180px;
+      width: 250px;
+    }
   }
 
   &:hover {
@@ -49,6 +71,11 @@
     padding: 10px;
     background-color: rgb(250, 244, 245);
     border-radius: 10px;
+
+    @include mobile {
+      font-size: 12px;
+      padding: 5px;
+    }
   }
 
   &__bottom {
@@ -68,6 +95,11 @@
     border-radius: 50%;
     object-fit: cover;
     margin: 0 30px;
+
+    @include mobile {
+      height: 35px;
+      width: 35px;
+    }
   }
 
   &__social {
@@ -76,9 +108,16 @@
 
   &__name {
     margin-bottom: 5px;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   &__occupation {
     color: rgba(128, 128, 128, 0.322);
+    @include mobile {
+      font-size: 13px;
+    }
   }
 }

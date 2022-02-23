@@ -12,6 +12,15 @@ export default function Contact() {
   function handleSubmit(event) {
     // event.preventDefault();
     setMessage(true);
+    // test
+    // fetch("/", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   body: encode({ name: "contact", ...contact }),
+    // })
+    //   .then(() => alert("Success!"))
+    //   .catch((error) => alert(error));
+    // test
 
     setInterval(function () {
       setMessage(false);
@@ -21,6 +30,7 @@ export default function Contact() {
       email: "",
       message: "",
     });
+    event.preventDefault();
   }
   console.log(contact);
   function handleChangeForm(event) {
@@ -44,6 +54,7 @@ export default function Contact() {
         <form
           className="contact__form"
           method="post"
+          name="contact"
           data-netlify="true"
           onSubmit={handleSubmit}
         >

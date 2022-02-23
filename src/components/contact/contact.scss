@@ -1,6 +1,12 @@
+@import "../../index.scss";
+
 .contact {
   background-color: #fff;
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
 
   &__left {
     flex: 1;
@@ -19,6 +25,10 @@
   &__title {
     font-size: 30px;
     margin-bottom: 20px;
+
+    @include mobile {
+      margin-top: 20px;
+    }
   }
 
   &__img {
@@ -65,6 +75,10 @@
     border-radius: 10px;
     font-weight: 500;
     cursor: pointer;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
 
     &:hover {
     }
