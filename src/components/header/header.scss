@@ -1,69 +1,20 @@
 @import "../../index.scss";
 
 .header {
-  background-color: #fff;
-  color: $mainColor;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   width: 100%;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
+
   transition: all 1s ease-in-out;
-
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
-  }
-
-  &__logo {
-    font-size: 40px;
-    font-weight: 700;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  &__right {
-    color: red;
-  }
-
-  .hamburger {
-    width: 32px;
-    height: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-
-    &__line {
-      width: 100%;
-      height: 3px;
-      background-color: $mainColor;
-      transform-origin: left;
-      transition: all 1.5s ease;
-    }
-  }
-
-  &.active {
-    background-color: $mainColor;
-    color: #fff;
-
-    .hamburger {
-      &__line--1 {
-        background-color: #fff;
-        transform: rotate(45deg);
-      }
-
-      &__line--2 {
-        opacity: 0;
-      }
-
-      &__line--3 {
-        background-color: #fff;
-        transform: rotate(-45deg);
-      }
-    }
-  }
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.314) 0%,
+      rgba(0, 0, 0, 0.31) 0%
+    ),
+    url("https://res.cloudinary.com/dxdboxbyb/image/upload/v1645726233/my_portfolio/my0pl7n3u8wxmevnrsoz.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
 }

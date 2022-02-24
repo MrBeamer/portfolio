@@ -3,7 +3,7 @@
 .side-navigation {
   width: 300px;
   height: 100vh;
-  background-color: $mainColor;
+  background-color: #fff;
   position: fixed;
   top: 70px;
   right: -300px;
@@ -29,7 +29,7 @@
   }
 
   &__link {
-    color: #fff;
+    color: $mainColor;
     text-decoration: none;
 
     &:hover {

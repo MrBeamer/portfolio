@@ -47,7 +47,8 @@ export default function Portfolio() {
       <div className="portfolio__container">
         {portfolio.map((portfolio) => {
           return (
-            <div key={portfolio.id} className="portfolio__item">
+            <div key={portfolio.id} className="portfolio__card">
+              {/* <h2>Test</h2> */}
               <img
                 className="portfolio__img"
                 src={portfolio.img}

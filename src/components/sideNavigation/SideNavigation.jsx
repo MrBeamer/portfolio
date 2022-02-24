@@ -16,11 +16,16 @@ export default function SideNavigation({ isOpen, onOpenClick }) {
           </a>
         </li>
         <li className="side-navigation__item" onClick={() => onOpenClick()}>
+          <a href="#about" className="side-navigation__link">
+            About me
+          </a>
+        </li>
+        <li className="side-navigation__item" onClick={() => onOpenClick()}>
           <a href="#portfolio" className="side-navigation__link">
             Portfolio
           </a>
         </li>
-        <li className="side-navigation__item" onClick={() => onOpenClick()}>
+        {/* <li className="side-navigation__item" onClick={() => onOpenClick()}>
           <a href="#work" className="side-navigation__link">
             Work
           </a>
@@ -29,7 +34,7 @@ export default function SideNavigation({ isOpen, onOpenClick }) {
           <a href="#testimonials" className="side-navigation__link">
             Testimonials
           </a>
-        </li>
+        </li> */}
         <li className="side-navigation__item" onClick={() => onOpenClick()}>
           <a href="#contact" className="side-navigation__link">
             Contact
