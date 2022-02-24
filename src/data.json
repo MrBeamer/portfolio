@@ -89,22 +89,22 @@
     {
       "id": "1",
       "avatar": "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      "comment": "Has always the right mindset to solve complex problems.",
       "name": "Tom Durden",
       "job": "Senior Developer"
     },
     {
       "id": "2",
       "avatar": "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      "comment": "Great Developer, always a pleasure to work with him.",
       "name": "Kimberly Ungelenk",
-      "job": "CEO of Kiddi",
+      "job": "CEO of Kido",
       "highlight": true
     },
     {
       "id": "3",
       "avatar": "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      "comment": "JavaScript and React skills are on point.",
       "name": "Martin Harold",
       "job": "CEO of ALBI"
     }
