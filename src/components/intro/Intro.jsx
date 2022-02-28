@@ -21,7 +21,9 @@ export default function Intro() {
             className="intro__icon"
           ></img>
         </a>
-        <button className="intro__btn">Contact me</button>
+        <a href="#portfolio" className="intro__btn">
+          My Portfolio
+        </a>
       </div>
     </div>
   );

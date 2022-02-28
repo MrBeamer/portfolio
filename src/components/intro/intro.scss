@@ -8,6 +8,10 @@
   top: 70px;
   height: calc(100vh - 70px);
 
+  @include mobile {
+    padding: 0 10px;
+  }
+
   &__content {
     color: #fff;
   }
@@ -55,6 +59,7 @@
   }
 
   &__btn {
+    text-decoration: none;
     font-size: 18px;
     background-color: transparent;
     color: #fff;

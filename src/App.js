@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 
 import "./App.scss";
-import { Header, Contact, Portfolio, SideNavigation } from "./components";
+import {
+  Header,
+  About,
+  Contact,
+  Portfolio,
+  SideNavigation,
+} from "./components";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +20,7 @@ function App() {
       <SideNavigation isOpen={isOpen} onOpenClick={handleOpenClick} />
       <div className="sections">
         <Header onOpenClick={handleOpenClick} isOpen={isOpen} />
+        <About />
         <Portfolio />
         <Contact />
       </div>

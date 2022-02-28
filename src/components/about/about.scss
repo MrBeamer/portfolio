@@ -1,0 +1,13 @@
+.about {
+  background-color: #060220;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__headline {
+    font-size: 50px;
+    color: #fff;
+  }
+}

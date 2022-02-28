@@ -2,6 +2,7 @@
 
 .portfolio {
   background-color: #060220;
+  // background-color: #fff;
 
   display: flex;
   flex-direction: column;
@@ -45,13 +46,10 @@
     height: 272px;
     width: 190px;
 
-    // width: 300px;
-    // height: auto;
-
     border-radius: 5px;
     margin: 10px 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     color: #fff;
     position: relative;
@@ -60,47 +58,85 @@
     transition: all 0.5s ease;
 
     @include mobile {
-      width: 200px;
-      height: auto;
-    }
-
-    &:hover {
-      background-color: $mainColor;
-
-      img {
-        opacity: 0.2;
-        z-index: 0;
-      }
+      height: 130px;
+      width: auto;
     }
   }
 
   &__img {
-    width: 50%;
+    width: auto;
     height: 50%;
     // object-fit: cover;
-    z-index: 1;
+
+    @include mobile {
+      // height: 60%;
+      width: 100%;
+    }
   }
 
   &__title {
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    margin-top: 15px;
+
+    @include mobile {
+      font-size: 12px;
+      margin-top: 10px;
+    }
   }
-  &__test {
+
+  &__label-container {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    font-size: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
+    @include mobile {
+      margin-top: 10px;
+    }
+  }
+
+  &__label {
+    font-size: 12px;
+    background-color: grey;
+    border-radius: 5px;
     color: #fff;
-    align-items: center;
+    padding: 5px 12px;
+    text-align: center;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include mobile {
+      display: none;
+      font-size: 10px;
+      padding: 5px 8px;
+    }
+  }
+
+  &__link-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }
 
 .fa-globe,
 .fa-github {
+  font-size: 15px;
   color: #fff;
+  padding: 8px;
+  background-color: crimson;
 
   &:hover {
-    color: crimson;
+    color: green;
+  }
+
+  @include mobile {
+    font-size: 12px;
+    padding: 4px;
   }
 }
 
