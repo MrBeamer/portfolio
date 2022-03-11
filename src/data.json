@@ -77,7 +77,7 @@
       "icon": "./assets/globe.png",
       "title": "Birdie",
       "subtitle": "Product Feedback",
-      "desc": " studied brand management and made different working experiences. During that I learned about design essentials and the importance of a great user- experience/journey.",
+      "desc": "A Bootcamp tought me a lot about HTML, SCSS and Ruby on Rails. Currently I am focusing on JavaScript & React and growing as a developer through new projects.",
       "img": "/assets/birdie-feedback.png",
       "git": "https://github.com/MrBeamer/product-feedback",
       "web": "https://birdie-feedback.netlify.app"
@@ -87,7 +87,7 @@
       "icon": "./assets/writing.png",
       "title": "Shortly",
       "subtitle": "Website",
-      "desc": "While attending Le Wagon I experienced agile development. Part of the experience was pair programming, test-driven development, stand-ups and sprints.",
+      "desc": "A Bootcamp tought me a lot about HTML, SCSS and Ruby on Rails. Currently I am focusing on JavaScript & React and growing as a developer through new projects.",
       "img": "/assets/shortly.png",
       "git": "https://github.com/MrBeamer/shortly",
       "web": "https://shortly-links.netlify.app/"
