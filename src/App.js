@@ -5,6 +5,7 @@ import {
   Header,
   About,
   Contact,
+  Work,
   Portfolio,
   SideNavigation,
 } from "./components";
@@ -21,7 +22,8 @@ function App() {
       <div className="sections">
         <Header onOpenClick={handleOpenClick} isOpen={isOpen} />
         <About />
-        <Portfolio />
+        {/* <Portfolio /> */}
+        <Work />
         <Contact />
       </div>
     </div>

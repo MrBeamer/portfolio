@@ -19,14 +19,11 @@
   }
 
   &__logo {
+    color: #fff;
     font-size: 40px;
     font-weight: 700;
     text-decoration: none;
-    color: inherit;
-  }
-
-  &__right {
-    color: red;
+    // color: inherit;
   }
 
   .hamburger {
@@ -49,6 +46,10 @@
   &.active {
     background-color: #fff;
     color: $mainColor;
+
+    .navbar__logo {
+      color: $mainColor;
+    }
 
     .hamburger {
       &__line--1 {

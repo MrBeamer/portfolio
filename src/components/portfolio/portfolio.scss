@@ -2,7 +2,6 @@
 
 .portfolio {
   background-color: #060220;
-  // background-color: #fff;
 
   display: flex;
   flex-direction: column;
@@ -43,7 +42,8 @@
 
   &__card {
     background-color: #0b072e;
-    height: 272px;
+    // height: 272px;
+    height: 350px;
     width: 190px;
 
     border-radius: 5px;
@@ -96,7 +96,7 @@
 
   &__label {
     font-size: 12px;
-    background-color: grey;
+    background-color: #98b9de;
     border-radius: 5px;
     color: #fff;
     padding: 5px 12px;
@@ -129,6 +129,7 @@
   color: #fff;
   padding: 8px;
   background-color: crimson;
+  background-color: #98b9de;
 
   &:hover {
     color: green;
