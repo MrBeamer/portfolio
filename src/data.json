@@ -68,7 +68,7 @@
       "title": "Audiophile",
       "subtitle": "E-Commerce",
       "desc": "A Bootcamp tought me a lot about HTML, SCSS and Ruby on Rails. Currently I am focusing on JavaScript & React and growing as a developer through new projects.",
-      "img": "/assets/audiophile.png",
+      "img": "/assets/audiophile2.png",
       "git": "https://github.com/MrBeamer/audiophile",
       "web": "https://audiophilee.netlify.app/"
     },
@@ -85,12 +85,12 @@
     {
       "id": "3",
       "icon": "./assets/writing.png",
-      "title": "Shortly",
+      "title": "Moviesquare",
       "subtitle": "Website",
       "desc": "A Bootcamp tought me a lot about HTML, SCSS and Ruby on Rails. Currently I am focusing on JavaScript & React and growing as a developer through new projects.",
-      "img": "/assets/shortly.png",
-      "git": "https://github.com/MrBeamer/shortly",
-      "web": "https://shortly-links.netlify.app/"
+      "img": "/assets/moviesquare.png",
+      "git": "https://github.com/MrBeamer/movie-web-app",
+      "web": "https://moviesquare.netlify.app"
     }
   ],
 

@@ -93,8 +93,12 @@
   &__description {
     font-size: 13px;
     line-height: 16px;
+    // text-align: justify;
+    // word-break: break-all;
+
     text-align: justify;
-    word-break: break-all;
+    text-justify: distribute;
+    text-align-last: left;
   }
 
   &__buttons {
@@ -122,6 +126,9 @@
     width: 65%;
     display: flex;
 
+    //hmm vielleicht raus
+    padding: 15px 15px 15px 0;
+
     @include mobile {
       width: 20px;
       height: 20px;
@@ -131,7 +138,7 @@
   &__img-right {
     width: 500px;
     width: 400px;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
 
     @include mobile {
       width: 80%;
