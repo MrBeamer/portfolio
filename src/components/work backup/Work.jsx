@@ -39,6 +39,13 @@ export default function Work() {
                 </div>
                 <div className="slider__item-right">
                   <img className="slider__img-right" src={work.img} alt="pic" />
+                  <p>
+                    "I'm a Frontend Developer based in Berlin. I enjoy creating
+                    things that live on the internet, whether that be websites,
+                    small web applications, or anything in between. My goal is
+                    to always build products that look amazing and provide a
+                    great user-experience."
+                  </p>
                 </div>
               </div>
             </div>
