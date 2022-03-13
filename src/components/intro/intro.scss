@@ -8,6 +8,10 @@
   top: 70px;
   height: calc(100vh - 70px);
 
+  @include mobile-big {
+    padding: 0 20px;
+  }
+
   @include mobile {
     padding: 0 20px;
   }
@@ -31,6 +35,10 @@
     // line-height: 88px;
     line-height: 58px;
     margin-bottom: 10px;
+
+    @include mobile-big {
+      margin-bottom: 5px;
+    }
 
     @include mobile {
       font-size: 45px;

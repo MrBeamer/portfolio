@@ -13,6 +13,11 @@
     color: #fff;
     margin-bottom: 70px;
 
+    @include mobile-big {
+      font-size: 40px;
+      margin-bottom: 25px;
+    }
+
     @include mobile {
       font-size: 30px;
       margin-bottom: 25px;
@@ -25,6 +30,11 @@
     column-gap: 55px;
     margin: 0 35px;
 
+    @include mobile-big {
+      grid-template-columns: 1fr;
+      row-gap: 28px;
+    }
+
     @include mobile {
       grid-template-columns: 1fr;
       row-gap: 28px;
@@ -32,12 +42,20 @@
   }
 
   &__content-left {
+    @include mobile-big {
+      grid-row: 2;
+    }
+
     @include mobile {
       grid-row: 2;
     }
   }
 
   &__content-right {
+    @include mobile-big {
+      justify-self: center;
+    }
+
     @include mobile {
       justify-self: center;
     }
@@ -59,19 +77,24 @@
     line-height: 22px;
 
     @include mobile-big {
-      font-size: 14px;
+      &.last {
+        display: none;
+      }
     }
 
     @include mobile {
       &.last {
         display: none;
-        background-color: red;
       }
     }
   }
 
   &__list {
     margin-left: 24px;
+
+    @include mobile-big {
+      display: none;
+    }
 
     @include mobile {
       display: none;

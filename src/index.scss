@@ -10,7 +10,7 @@ $mainColor: #060220;
 }
 
 @mixin mobile-big {
-  @media (max-width: #{400px}) {
+  @media (max-width: #{420px}) {
     @content;
   }
 }
