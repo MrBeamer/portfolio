@@ -66,6 +66,10 @@
     width: auto;
     border-radius: 5px;
 
+    @include mobile-big {
+      height: 250px;
+    }
+
     @include mobile {
       // height: 185px;
       height: 175px;
@@ -78,6 +82,9 @@
     line-height: 22px;
 
     @include mobile-big {
+      font-size: 15px;
+      text-align: justify;
+
       &.last {
         display: none;
       }
