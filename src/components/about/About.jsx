@@ -9,8 +9,8 @@ export default function About() {
           <p className="about__text">
             Hello! My name is Michael and I enjoy creating things that live on
             the internet. My interest in web development started back in 2021
-            when I decided to attend Le Wagon — turns out the bootcamp taught me
-            a lot about Ruby, HTML & CSS!
+            when I decided to attend Le Wagon — turns out it taught me a lot
+            about Ruby, HTML & CSS!
           </p>
           <p className="about__text">
             Fast-forward to today, I’ve build a lot of different Projects in my
