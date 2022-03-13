@@ -47,22 +47,25 @@ export default function Portfolio() {
       <div className="portfolio__container">
         {portfolio.map((portfolio) => {
           return (
-            <div key={portfolio.id} className="portfolio__item">
+            <div key={portfolio.id} className="portfolio__card">
               <img
                 className="portfolio__img"
                 src={portfolio.img}
                 alt={portfolio.title}
               />
-              <div className="portfolio__test">
-                <h3 className="portfolio__title">{portfolio.title}</h3>
-                <div>
-                  <a href={portfolio.web} target="_blank" rel="noreferrer">
-                    <i className="fa-globe fas"></i>
-                  </a>
-                  <a href={portfolio.git} target="_blank" rel="noreferrer">
-                    <i className="fa-github fab"></i>
-                  </a>
-                </div>
+              <h3 className="portfolio__title">{portfolio.title}</h3>
+              <div className="portfolio__label-container">
+                <p className="portfolio__label">API</p>
+                <p className="portfolio__label">React</p>
+                <p className="portfolio__label">Stripe</p>
+              </div>
+              <div className="portfolio__link-container">
+                <a href={portfolio.web} target="_blank" rel="noreferrer">
+                  <i className="fa-globe fas"></i>
+                </a>
+                <a href={portfolio.git} target="_blank" rel="noreferrer">
+                  <i className="fa-github fab"></i>
+                </a>
               </div>
             </div>
           );

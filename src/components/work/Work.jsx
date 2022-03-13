@@ -15,7 +15,9 @@ export default function Work() {
   }
 
   return (
-    <div className="work" id="work">
+    <div className="work" id="portfolio">
+      <h2 className="work__headline">Portfolio</h2>
+
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
@@ -26,15 +28,29 @@ export default function Work() {
               <div className="slider__item">
                 <div className="slider__item-left">
                   <div className="slider__container-left">
-                    <div className="slider__img-container-left">
-                      <img
-                        className="slider__img-left"
-                        src={work.icon}
-                        alt="icon"
-                      />
+                    <div className="slider__titles">
+                      <h2 className="slider__title"> {work.title}</h2>
+                      <h2 className="slider__subtitle"> {work.subtitle}</h2>
                     </div>
-                    <h2 className="slider__title"> {work.title}</h2>
                     <p className="slider__description">{work.desc}</p>
+                    <div className="slider__buttons">
+                      <a
+                        className="slider__btn"
+                        href={work.web}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fa-globe fas"></i>
+                      </a>
+                      <a
+                        className="slider__btn"
+                        href={work.git}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fa-github fab"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div className="slider__item-right">

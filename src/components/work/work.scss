@@ -1,14 +1,26 @@
 @import "../../index.scss";
 
 .work {
-  background-color: crimson;
+  background-color: #060220;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+
+  &__headline {
+    font-size: 50px;
+    color: #fff;
+    align-self: flex-start;
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
 }
+
 .slider {
-  height: 350px;
+  // height: 350px; old
+  height: 300px;
   display: flex;
   position: absolute;
   left: 0;
@@ -33,7 +45,7 @@
     background-color: #fff;
     border-radius: 20px;
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     overflow: hidden;
 
@@ -45,12 +57,12 @@
   }
 
   &__item-left {
-    flex: 4;
     height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 15px;
+    align-self: center;
+    padding: 0 10px;
   }
 
   &__container-left {
@@ -58,55 +70,74 @@
     height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
     @include mobile {
       width: 100%;
       height: 100%;
     }
   }
 
-  &__img-container-left {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgb(245, 179, 155);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__img-left {
-    width: 25px;
+  &__titles {
+    margin-bottom: 20px;
   }
 
   &__title {
     font-size: 20px;
+    margin-bottom: 3px;
+  }
+
+  &__subtitle {
+    font-size: 15px;
+    opacity: 0.6;
   }
 
   &__description {
     font-size: 13px;
+    line-height: 16px;
+    // text-align: justify;
+    // word-break: break-all;
+
     text-align: justify;
-    word-break: break-all;
+    text-justify: distribute;
+    text-align-last: left;
+  }
+
+  &__buttons {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    text-decoration: none;
+    background-color: crimson;
+    font-size: 13px;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+    width: 40%;
+
+    &:hover {
+      background-color: rgba(220, 20, 60, 0.856);
+    }
   }
 
   &__item-right {
-    flex: 8;
-    height: 80%;
+    width: 65%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
+    //hmm vielleicht raus
+    padding: 15px 15px 15px 0;
 
     @include mobile {
-      width: 20px;
-      height: 20px;
+      display: none;
     }
   }
 
   &__img-right {
+    width: 500px;
     width: 400px;
-    border-radius: 20px;
-    transform: rotate(-10deg);
+    border-radius: 0 5px 5px 0;
 
     @include mobile {
       width: 80%;
