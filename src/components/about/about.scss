@@ -8,6 +8,10 @@
   align-items: center;
   flex-direction: column;
 
+  &__highlighted {
+    color: crimson;
+  }
+
   &__headline {
     font-size: 50px;
     color: #fff;
@@ -79,10 +83,12 @@
   &__text {
     max-width: 643px;
     margin-bottom: 18px;
-    line-height: 22px;
+    line-height: 25px;
+    font-size: 18px;
 
     @include mobile-big {
       font-size: 15px;
+      line-height: 22px;
       text-align: justify;
 
       &.last {
@@ -92,6 +98,7 @@
 
     @include mobile {
       font-size: 15px;
+      line-height: 22px;
       text-align: justify;
 
       &.last {
@@ -102,6 +109,7 @@
 
   &__list {
     margin-left: 24px;
+    list-style-type: none;
 
     @include mobile-big {
       display: none;
@@ -119,4 +127,9 @@
       margin-bottom: 0;
     }
   }
+}
+
+.fa-caret-right {
+  margin-right: 8px;
+  color: crimson;
 }

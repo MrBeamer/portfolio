@@ -9,21 +9,34 @@ export default function About() {
           <p className="about__text">
             Hello! My name is Michael and I enjoy creating things that live on
             the internet. My interest in web development started back in 2021
-            when I decided to attend Le Wagon — turns out it taught me a lot
-            about Ruby, HTML & CSS!
+            when I decided to attend
+            <span className="about__highlighted"> Le Wagon</span> — turns out it
+            taught me a lot about Ruby, HTML & CSS!
           </p>
           <p className="about__text">
             Fast-forward to today, I’ve build a lot of different Projects in my
-            free time. My main focus these days is learning new technologies and
-            good practices to become a better Developer.
+            free time. My main focus these days is learning
+            <span className="about__highlighted"> new technologies </span>
+            and
+            <span className="about__highlighted"> good practices </span>
+            to become a better Developer.
           </p>
           <p className="about__text last">
             Here are a few technologies I’ve been working with recently:
           </p>
           <ul className="about__list">
-            <li className="about__item">JavaScript</li>
-            <li className="about__item">React</li>
-            <li className="about__item">Node.js</li>
+            <li className="about__item">
+              <i className="fas fa-caret-right"></i>
+              JavaScript
+            </li>
+            <li className="about__item">
+              <i className="fas fa-caret-right"></i>
+              React
+            </li>
+            <li className="about__item">
+              <i className="fas fa-caret-right"></i>
+              Node.js
+            </li>
           </ul>
         </div>
 
