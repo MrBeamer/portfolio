@@ -3,14 +3,14 @@
 //global variables
 $mainColor: #060220;
 
-@mixin tablet {
-  @media (max-width: #{720px}) {
-    @content;
-  }
-}
+// @mixin mobile-big {
+//   @media (max-width: #{420px}) {
+//     @content;
+//   }
+// }
 
 @mixin mobile-big {
-  @media (max-width: #{420px}) {
+  @media (max-width: #{1090px}) {
     @content;
   }
 }

@@ -30,12 +30,6 @@
   left: 0;
   transition: all 1s ease;
 
-  @include tablet {
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-  }
-
   @include mobile-big {
     height: 100vh;
     flex-direction: column;
@@ -65,12 +59,6 @@
     // align-items: center;
     justify-content: center;
     overflow: hidden;
-
-    @include tablet {
-      width: 90%;
-      height: 200px;
-      margin: 10px 0;
-    }
 
     @include mobile-big {
       position: relative;
@@ -254,6 +242,7 @@
       left: 100px;
       transform: rotate(180deg);
     }
+
     &.right {
       right: 100px;
     }
