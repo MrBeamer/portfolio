@@ -15,7 +15,7 @@ export default function About() {
           <p className="about__text">
             Fast-forward to today, I’ve build a lot of different Projects in my
             free time. My main focus these days is learning new technologies and
-            good practices to become a better Frontend Developer.
+            good practices to become a better Developer.
           </p>
           <p className="about__text last">
             Here are a few technologies I’ve been working with recently:
