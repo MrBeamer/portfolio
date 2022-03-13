@@ -37,7 +37,7 @@
 
     @include mobile {
       grid-template-columns: 1fr;
-      row-gap: 28px;
+      row-gap: 26px;
     }
   }
 
@@ -67,7 +67,8 @@
     border-radius: 5px;
 
     @include mobile {
-      height: 185px;
+      // height: 185px;
+      height: 175px;
     }
   }
 
