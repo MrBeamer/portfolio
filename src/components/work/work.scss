@@ -26,16 +26,17 @@
   left: 0;
   transition: all 1s ease;
 
-  @include mobile {
+  @include tablet {
     height: 100vh;
     flex-direction: column;
     justify-content: center;
   }
 
-  @include tablet {
+  @include mobile {
     height: 100vh;
     flex-direction: column;
     justify-content: center;
+    margin-top: 50px;
   }
 
   &__container {
