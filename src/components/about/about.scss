@@ -27,7 +27,7 @@
 
     @include mobile {
       grid-template-columns: 1fr;
-      row-gap: 34px;
+      row-gap: 28px;
     }
   }
 
@@ -63,6 +63,10 @@
     }
 
     @include mobile {
+      &.last {
+        display: none;
+        background-color: red;
+      }
     }
   }
 

@@ -17,7 +17,7 @@ export default function About() {
             free time. My main focus these days is learning new technologies and
             good practices to become all in all a better Frontend Engineer.
           </p>
-          <p className="about__text">
+          <p className="about__text last">
             Here are a few technologies I’ve been working with recently:
           </p>
           <ul className="about__list">
