@@ -1,3 +1,5 @@
+@import "./index.scss";
+
 .App {
   // min-height: 100vh;
   height: 100vh;
@@ -26,5 +28,9 @@
 
     // on the child
     scroll-snap-align: start;
+
+    @include mobile {
+      padding-top: 90px;
+    }
   }
 }
