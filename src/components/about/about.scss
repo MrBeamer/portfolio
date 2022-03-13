@@ -58,13 +58,20 @@
     margin-bottom: 25px;
     line-height: 22px;
 
-    @include mobile {
+    @include mobile-big {
       font-size: 14px;
+    }
+
+    @include mobile {
     }
   }
 
   &__list {
     margin-left: 24px;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__item {
