@@ -15,7 +15,7 @@ export default function Work() {
   }
 
   return (
-    <div className="work" id="work">
+    <div className="work" id="portfolio">
       <h2 className="work__headline">Portfolio</h2>
 
       <div
