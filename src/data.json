@@ -87,7 +87,7 @@
       "icon": "./assets/writing.png",
       "title": "Moviesquare",
       "subtitle": "Website",
-      "desc": "Moviesquare find the latest movies. Watch trailers, mark as favorites, lookup details about many movies. Built with: JavaScript, React, HTML and SCSS.",
+      "desc": "Moviesquare is a website project. Watch trailers, bookmark your favorite movies, lookup details about many movies. Built with: JavaScript, React, HTML and SCSS.",
       "img": "/assets/moviesquare.png",
       "git": "https://github.com/MrBeamer/movie-web-app",
       "web": "https://moviesquare.netlify.app"
